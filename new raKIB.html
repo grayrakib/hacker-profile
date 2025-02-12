@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker Profile</title>
+    <style>
+        body {
+            background-color: black;
+            color: #00ff00;
+            font-family: "Courier New", monospace;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            border: 2px solid #00ff00;
+            padding: 20px;
+            display: inline-block;
+            box-shadow: 0 0 35px #00ff00;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 50px;
+            animation: glow 1.5s infinite alternate;
+        }
+        @keyframes glow {
+            0% { box-shadow: 0 0 20px #00ff00; }
+            100% { box-shadow: 0 0 40px #00ff00; }
+        }
+        h1 {
+            text-shadow: 0 0 25px #00ff00;
+            margin-bottom: 20px;
+            animation: flicker 1.5s infinite alternate;
+        }
+        @keyframes flicker {
+            0% { opacity: 1; text-shadow: 0 0 15px #00ff00; }
+            100% { opacity: 0.6; text-shadow: 0 0 30px #00ff00; }
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 2px solid #00ff00;
+            box-shadow: 0 0 25px #00ff00;
+            margin-bottom: 20px;
+        }
+        .info {
+            text-align: left;
+            display: inline-block;
+            text-shadow: 0 0 10px #00ff00;
+        }
+        .info p, .info ul {
+            margin: 5px 0;
+            animation: neonGlow 1.5s infinite alternate;
+        }
+        @keyframes neonGlow {
+            0% { text-shadow: 0 0 10px #00ff00; }
+            100% { text-shadow: 0 0 20px #00ff00; }
+        }
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: 0 0 30px #00ff00;
+            animation: flicker 1.5s infinite alternate;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="profile.jpg" alt="Profile Picture" class="profile-img">
+        <h1>WE ARE ANONYMOUS</h1>
+        <p class="name">RAKIB</p>
+        <div class="info">
+            <p><b>Skills:</b></p>
+            <ul>
+                <li>Ethical Hacking</li>
+                <li>Web Development</li>
+                <li>Cyber Security</li>
+            </ul>
+            <p><b>Status:</b> ALWAYS LEARNING...</p>
+        </div>
+    </div>
+</body>
+</html>
